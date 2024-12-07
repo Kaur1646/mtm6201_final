@@ -1,0 +1,366 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(217, 239, 204);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.logo {
+    height: 60px; /* Adjust as per your requirement */
+    width: auto;
+    border-radius: 70px;
+}
+
+/* Centering the navbar items */
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    text-align: center; /* Ensures text inside is centered */
+    gap: 20px; /* Adds space between the menu items */
+    width: 100%; /* Ensures the navbar takes up full width of the container */
+}
+
+.nav-link {
+    color: #333; /* Text color */
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.nav-link:hover {
+    color: #007bff; /* Highlight color on hover */
+}
+
+/* Adjust container or navbar positioning */
+.navbar {
+    display: flex;
+    justify-content: center; /* Centers the navbar */
+    align-items: center; /* Vertically centers items within navbar */
+    width: 100%;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e8f5e9; /* Light green background */
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #1b5e20; /* Dark green */
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #558a42;
+}
+
+/* Vegetarian Image */
+.vege {
+    display: block;
+    width: 100%; /* Ensure responsiveness */
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto; /* Centers the image horizontally */
+    text-align: center;
+    border-radius: 20px; /* Adds rounded corners */
+}
+
+/* Content Section */
+.content-section {
+    padding: 40px 20px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.content-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Makes the image circular */
+}
+
+.content-text {
+    max-width: 600px;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.content-text p {
+    margin: 0 0 10px;
+}
+
+/* Menu Section */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Teasers Section */
+.teasers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.teaser-item img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 1.5rem;
+    color: #558a42;
+    margin: 40px 0 20px;
+    text-align: center;
+}
+
+/* Delivery Button */
+.delivery-btn-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.delivery-btn {
+    display: inline-block;
+    background-color: #d8f3dc;
+    color: #1b5e20;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 2px solid #91c788;
+}
+
+.delivery-btn:hover {
+    background-color: #b7e4c7;
+}
+
+/* Image Content Section */
+.image-content-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.image-content-item {
+    text-align: center;
+    flex: 1;
+    margin: 0 15px;
+}
+
+.image-content-item img {
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Find Us Section */
+.find-us-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.map {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Potatoes Section */
+.potatoes {
+    display: block;
+    width: 100%; /* Ensure responsiveness */
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto; /* Centers the image horizontally */
+    text-align: center;
+    border-radius: 20px; /* Adds rounded corners */
+}
+
+/* Media Queries */
+
+/* Mobile View (up to 768px) */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: left;
+        gap: 10px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .teasers-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .image-content-section {
+        flex-direction: column;
+    }
+
+    .map iframe {
+        max-width: 100%;
+    }
+}
+
+/* Tablet View (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .header h1 {
+        font-size: 2.2rem;
+    }
+
+    .header p {
+        font-size: 1.1rem;
+    }
+
+    .content-wrapper {
+        flex-direction: row;
+    }
+
+    .content-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .teasers-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .image-content-section {
+        flex-direction: row;
+    }
+}
+
+/* Desktop View (1024px and up) */
+@media (min-width: 1024px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .header p {
+        font-size: 1.2rem;
+    }
+
+    .content-wrapper {
+        max-width: 1200px;
+    }
+
+    .content-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .teasers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .image-content-section {
+        justify-content: space-between;
+    }
+}
